@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A926B4D523F2BD6000E41B8F /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A926B4D423F2BD6000E41B8F /* SnapshotTesting */; };
 		A9ED7DD323F2BC4400FE3E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED7DD223F2BC4400FE3E38 /* AppDelegate.swift */; };
 		A9ED7DD523F2BC4400FE3E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED7DD423F2BC4400FE3E38 /* ViewController.swift */; };
 		A9ED7DD823F2BC4400FE3E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9ED7DD623F2BC4400FE3E38 /* Main.storyboard */; };
 		A9ED7DDA23F2BC4500FE3E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9ED7DD923F2BC4500FE3E38 /* Assets.xcassets */; };
 		A9ED7DDD23F2BC4500FE3E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9ED7DDB23F2BC4500FE3E38 /* LaunchScreen.storyboard */; };
 		A9ED7DE823F2BC4500FE3E38 /* SnapshotAfterUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED7DE723F2BC4500FE3E38 /* SnapshotAfterUpdateTests.swift */; };
+		A9ED7DF423F2BCD700FE3E38 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED7DF223F2BCD700FE3E38 /* Flag.swift */; };
+		A9ED7DF523F2BCD700FE3E38 /* Flag.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9ED7DF323F2BCD700FE3E38 /* Flag.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A926B4D623F2BD9300E41B8F /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		A9ED7DCF23F2BC4400FE3E38 /* SnapshotAfterUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapshotAfterUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9ED7DD223F2BC4400FE3E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9ED7DD423F2BC4400FE3E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		A9ED7DE323F2BC4500FE3E38 /* SnapshotAfterUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotAfterUpdateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9ED7DE723F2BC4500FE3E38 /* SnapshotAfterUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotAfterUpdateTests.swift; sourceTree = "<group>"; };
 		A9ED7DE923F2BC4500FE3E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9ED7DF223F2BCD700FE3E38 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		A9ED7DF323F2BCD700FE3E38 /* Flag.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Flag.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A926B4D523F2BD6000E41B8F /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,8 @@
 		A9ED7DD123F2BC4400FE3E38 /* SnapshotAfterUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				A9ED7DF223F2BCD700FE3E38 /* Flag.swift */,
+				A9ED7DF323F2BCD700FE3E38 /* Flag.xib */,
 				A9ED7DD223F2BC4400FE3E38 /* AppDelegate.swift */,
 				A9ED7DD423F2BC4400FE3E38 /* ViewController.swift */,
 				A9ED7DD623F2BC4400FE3E38 /* Main.storyboard */,
@@ -90,6 +99,7 @@
 		A9ED7DE623F2BC4500FE3E38 /* SnapshotAfterUpdateTests */ = {
 			isa = PBXGroup;
 			children = (
+				A926B4D623F2BD9300E41B8F /* __Snapshots__ */,
 				A9ED7DE723F2BC4500FE3E38 /* SnapshotAfterUpdateTests.swift */,
 				A9ED7DE923F2BC4500FE3E38 /* Info.plist */,
 			);
@@ -130,6 +140,9 @@
 				A9ED7DE523F2BC4500FE3E38 /* PBXTargetDependency */,
 			);
 			name = SnapshotAfterUpdateTests;
+			packageProductDependencies = (
+				A926B4D423F2BD6000E41B8F /* SnapshotTesting */,
+			);
 			productName = SnapshotAfterUpdateTests;
 			productReference = A9ED7DE323F2BC4500FE3E38 /* SnapshotAfterUpdateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -162,6 +175,9 @@
 				Base,
 			);
 			mainGroup = A9ED7DC623F2BC4400FE3E38;
+			packageReferences = (
+				A926B4D323F2BD6000E41B8F /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = A9ED7DD023F2BC4400FE3E38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,6 +196,7 @@
 				A9ED7DDD23F2BC4500FE3E38 /* LaunchScreen.storyboard in Resources */,
 				A9ED7DDA23F2BC4500FE3E38 /* Assets.xcassets in Resources */,
 				A9ED7DD823F2BC4400FE3E38 /* Main.storyboard in Resources */,
+				A9ED7DF523F2BCD700FE3E38 /* Flag.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9ED7DD523F2BC4400FE3E38 /* ViewController.swift in Sources */,
+				A9ED7DF423F2BCD700FE3E38 /* Flag.swift in Sources */,
 				A9ED7DD323F2BC4400FE3E38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +479,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A926B4D323F2BD6000E41B8F /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A926B4D423F2BD6000E41B8F /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A926B4D323F2BD6000E41B8F /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9ED7DC723F2BC4400FE3E38 /* Project object */;
 }
