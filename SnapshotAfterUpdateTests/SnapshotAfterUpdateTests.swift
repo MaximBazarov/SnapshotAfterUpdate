@@ -18,12 +18,7 @@ class SnapshotAfterUpdateTests: XCTestCase {
         ).instantiateInitialViewController()!
 
     func testExample1() {
-        delay(2)
-        assertSnapshot(matching: sut, as: .image)
+        sut.view.setNeedsDisplay()
+        assertSnapshot(matching: sut, as: .wait(for: 2, on: .image))
     }
-}
-
-func delay(_ second: TimeInterval) {
-    let date = Date(timeIntervalSinceNow: second)
-    RunLoop.current.run(until: date)
 }
